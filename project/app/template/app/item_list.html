@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends "basic.html"%}
+{%block body_block%}
+<div class="container">
+
+
+<h1>Welcome to list of All the Items</h1>
+<ol>
+  {% for item in commercialitem_list %}
+  <h2><li><a href="">{{item.title}}</a></li></h2>
+  {% endfor %}
+</ol>
+
+
+
+</div>
+
+
+
+{%endblock%}
